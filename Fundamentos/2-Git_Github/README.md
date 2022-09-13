@@ -6,7 +6,7 @@ Git & Github
 
 // Clonar ou baixar um repósitorio //
 
-git clone url-do-repositório
+git clone (url-do-repositório)
 
 // Verificar o repositorio atual 
 
@@ -18,6 +18,14 @@ git branch
 
 // Cria uma branch nova e alterna automaticamente (pra a nova)
 
-git checkout -b nome da branch
+git checkout -b (nome da branch)
 
-// 
+// Alterna para a branch especificada 
+
+git checkout (nome da branch)
+
+// Add arquivo para staging 
+
+git add (nome do arquivo)
+ou
+git add .   (para todos os arquivos modificados)
