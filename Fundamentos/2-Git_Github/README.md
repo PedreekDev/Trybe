@@ -18,6 +18,6 @@ git branch
 
 // Cria uma branch nova e alterna automaticamente (pra a nova)
 
-git checkout -b <nome da branch>
+git checkout -b nome da branch
 
 // 
