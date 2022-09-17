@@ -1,0 +1,23 @@
+div:hover{
+    border: 2px solid black;
+}
+
+.primary {
+    background: yellow;
+}
+
+.second {
+    background: blue;
+}
+
+.third {
+    background: green;
+}
+
+.fourth{
+    background: gray;
+}
+
+.fifth{
+    background: red;
+}
