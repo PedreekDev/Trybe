@@ -1,0 +1,53 @@
+div:hover{
+    border: 2px solid black;
+}
+
+div:nth-of-type(1) {
+    background-color: blue;
+}
+
+div:nth-of-type(2) {
+    background-color: green;
+}
+
+div:nth-of-type(3) {
+    background-color: pink;
+}
+
+div:nth-of-type(4) {
+    background-color: black;
+}
+
+div:nth-of-type(5) {
+    background-color: white;
+}
+
+/* Estilização da h3 */
+
+div:nth-of-type(1) {
+    color: white;
+}
+div:nth-of-type(2) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+div:nth-of-type(3) {
+    font-size: 20px ;
+}
+div:nth-of-type(4) {
+    color: white;
+}
+div:nth-of-type(5) {
+    color: black;
+}
+
+/* Terceira div maior */
+
+div:nth-of-type(3) {
+    font-size: 30px;
+}
+
+/* Tags ímpares em itálico */
+
+div:nth-child(odd) h3{
+    font-style: italic;
+}
