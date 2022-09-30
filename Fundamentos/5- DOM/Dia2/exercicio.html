@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+// =============   Criando o h1
+
+        const titulo = document.createElement('h1');
+        titulo.innerText = 'Exercício - JavaScript DOM';
+        document.body.appendChild(titulo)
+
+// =============  Criando a main 
+
+        const main = document.createElement('main');
+        main.className = 'main-content';
+        document.body.appendChild(main)
+
+// ============= Criando a section > main
+
+        const sessao = document.createElement('section');
+        sessao.className = 'center-content';
+        main.appendChild(sessao)
+
+// ============= Criando a section2 > main
+
+        const sessaoLeft = document.createElement('section');
+        sessaoLeft.className = 'left-content';
+        main.appendChild(sessaoLeft)
+
+// ============= Criando a section3 > main
+
+        const sessaoRight = document.createElement('section');
+        sessaoRight.className = 'right-content';
+        main.appendChild(sessaoRight)       
+
+// ============= Criando paragrafo > section > main
+
+        const paragraph = document.createElement('p');
+        paragraph.innerText = 'Oie';
+        sessao.appendChild(paragraph)
+
+// ============= Criando img
+
+        const imagem = document.createElement('img');
+        imagem.src = 'https://picsum.photos/200';
+        imagem.className = 'small-image';
+        sessaoLeft.appendChild(imagem);
+
+// ============= Criando UL
+
+        
+
+        
+
+    </script>
+  </body>
+</html>

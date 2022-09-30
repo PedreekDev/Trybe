@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+                <section id="primeiroFilho">
+
+                </section>
+            <section id="elementoOndeVoceEsta">
+                <section id="primeiroFilhoDoFilho">                
+                </section>
+                <section id="segundoEUltimoFilhoDoFilho">
+                    
+                </section>
+            </section>
+          Atenção!
+            <section id="terceiroFilho">
+
+            </section>
+            <section id="quartoEUltimoFilho">
+                
+            </section>
+        </section>        
+      </main>    
+      <script>
+        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta'); //elemento do id elementoOndeVoceEsta
+
+        const pai = elementoOndeVoceEsta.parentElement; // variavel do elemento pai
+        pai.style.color = 'blue';
+
+        const irmaoElementoOndeVoceEsta = document.createElement('section'); // criaçao do novo elemento section irmao do elementoOndeVoceEsta    
+        irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta'  //id do irmao do elementoOndeVoceEsta
+        pai.appendChild(irmaoElementoOndeVoceEsta);       // criação do elemento irmaoElementoOndeVoceEsta filho do pai 
+
+        const filhoElementoOndeVoceEsta = document.createElement('section') // criado filho do elementoondevcesta
+        filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta'; // id do filho do elementoondevcesta
+        elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+
+        const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild; 
+        primeiroFilhoDoFilho.innerText = 'primeiroFilhoDoFilho';
+        
+
+        const filhoDoFilhoDoFilho = document.createElement('section');
+        filhoDoFilhoDoFilho.id = ('filhoDoFilhoDoFilho');
+        primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+
+        const terceiroFilho = filhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling; // neto > filho do ondevcta > ondevcta > proximo elemento
+ 
+
+        const primeiroFilho = pai.firstElementChild;
+
+        const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+
+        const textAtencao = elementoOndeVoceEsta.nextSibling;
+
+        const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+
+
+      </script>
+</body>
+</html> -->
+
+<!-- /* ============================================================= */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai"> <!-- nao -->
+          <section id="primeiroFilho">        
+          </section>
+          <section id="elementoOndeVoceEsta"> <!-- nao -->
+            <section id="primeiroFilhoDoFilho"> <!-- nao -->
+            </section>
+            <section id="segundoEUltimoFilhoDoFilho">
+    
+            </section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho">
+    
+          </section>
+          <section id="quartoEUltimoFilho">
+    
+          </section>
+        </section>
+      </main>
+    <script>
+
+        const pai = document.getElementById('pai');
+        let todosOsFilhos = pai.childNodes;
+        
+        for (let i = todosOsFilhos -1; i >= 0; i -=1) {
+            const filhoAtual = todosOsFilhos[i];
+            if (filhoAtual !== elementoOndeVoceEsta) {
+                filhoAtual.remove();
+            }
+        }
+
+        const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+        segundoEUltimoFilhoDoFilho.remove();
+
+
+    </script>
+</body>
+</html>
+
+  Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
