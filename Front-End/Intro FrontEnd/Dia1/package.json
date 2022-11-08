@@ -1,0 +1,20 @@
+{
+  "name": "trybe",
+  "version": "1.0.0",
+  "description": "Exercícios Trybe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedreekDev/Trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedreekDev/Trybe/issues"
+  },
+  "homepage": "https://github.com/PedreekDev/Trybe#readme"
+}
